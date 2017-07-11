@@ -1,0 +1,25 @@
+{
+  "name": "sahp-api",
+  "version": "1.0.0",
+  "description": "An API for Simple As Humanly Possible.",
+  "main": "index.js",
+  "dependencies": {
+    "mongo": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clevergrant/sahp-api.git"
+  },
+  "author": "Grant Perdue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clevergrant/sahp-api/issues"
+  },
+  "homepage": "https://github.com/clevergrant/sahp-api#readme"
+}
