@@ -8,7 +8,7 @@ module.exports = function (app) {
 		.post(Navigation.create_a_Navigation);
 
 
-	app.route('/Navigations/:NavigationId')
+	app.route('/Navigations/:NavigationKey')
 		.get(Navigation.read_a_Navigation)
 		.put(Navigation.update_a_Navigation)
 		.delete(Navigation.delete_a_Navigation);

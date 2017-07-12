@@ -5,23 +5,30 @@ var mongoose = require('mongoose'),
 
 var NavSchema = new Schema(
 	{
-		name: {
+		innerText: {
 			type: String,
-			Required: 'Enter Name of Link'
+			required: "Please specify text to show."
 		},
-		url: {
+		linkHref: {
 			type: String,
-			Required: 'Enter Link URL'
+			required: "Please specify the link."
+		},
+		newWindow: {
+			type: Boolean,
+			default: false
 		}
 	}
 );
-var Nav = mongoose.model('Navs', NavSchema);
 
 var NavigationSchema = new Schema(
 	{
-		name: {
+		key: {
 			type: String,
-			default: "NewNavigation"
+			required: "Please define a key."
+		},
+		values: {
+			type: [NavSchema],
+			default: []
 		}
 	}
 );

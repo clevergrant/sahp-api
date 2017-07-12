@@ -27,8 +27,8 @@ exports.create_a_Navigation = function (req, res) {
 };
 
 exports.read_a_Navigation = function (req, res) {
-	Navigation.findById(
-		req.params.NavigationId,
+	Navigation.find(
+		{ key: req.params.NavigationKey },
 		function (err, Navigation) {
 			if (err)
 				res.send(err);
@@ -39,7 +39,7 @@ exports.read_a_Navigation = function (req, res) {
 
 exports.update_a_Navigation = function (req, res) {
 	Navigation.findOneAndUpdate(
-		{ _id: req.params.NavigationId },
+		{ key: req.params.NavigationKey },
 		req.body,
 		{ new: true },
 		function (err, Navigation) {
@@ -52,7 +52,7 @@ exports.update_a_Navigation = function (req, res) {
 
 exports.delete_a_Navigation = function (req, res) {
 	Navigation.remove(
-		{ _id: req.params.NavigationId },
+		{ key: req.params.NavigationKey },
 		function (err, Navigation) {
 			if (err)
 				res.send(err);
