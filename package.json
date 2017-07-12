@@ -4,7 +4,9 @@
   "description": "An API for Simple As Humanly Possible.",
   "main": "index.js",
   "dependencies": {
-    "mongo": "^0.1.0"
+    "express": "^4.15.3",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.11.1"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
