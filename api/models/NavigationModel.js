@@ -22,8 +22,7 @@ var NavigationSchema = new Schema(
 		name: {
 			type: String,
 			default: "NewNavigation"
-		},
-		list: [Nav]
+		}
 	}
 );
 
